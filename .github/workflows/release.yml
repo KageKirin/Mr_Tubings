@@ -75,6 +75,13 @@ jobs:
           scope: '@kagekirin'
       - name: Install dependencies
         run: yarn install
+
+      - name: Remove superfluous metafiles we do not want to pack
+        run: |
+          rm Assets/Models.meta
+          rm Assets/Scenes.meta
+          rm Assets/Editor.meta
+
       - name: Publish to GitHub NPM Registry
         run: npm publish --access public
         env:
@@ -98,6 +105,13 @@ jobs:
         run: sed -i -e "s|npm.pkg.github.com/@kagekirin|registry.npmjs.org|g" package.json
       - name: Install dependencies
         run: yarn install
+
+      - name: Remove superfluous metafiles we do not want to pack
+        run: |
+          rm Assets/Models.meta
+          rm Assets/Scenes.meta
+          rm Assets/Editor.meta
+
       - name: Publish to NPM.JS Registry
         run: npm publish --access public
         env:
