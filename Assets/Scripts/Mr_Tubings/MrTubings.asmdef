@@ -1,5 +1,5 @@
 {
-    "name": "KageKirin.Mr_Tubings.Runtime",
+    "name": "KageKirin.Mr_Tubings",
     "rootNamespace": "KageKirin.Mr_Tubings",
     "references": [
         "Unity.Mathematics",
@@ -16,9 +16,7 @@
         "nunit.framework.dll"
     ],
     "autoReferenced": false,
-    "defineConstraints": [
-        "UNITY_INCLUDE_TESTS"
-    ],
+    "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false
 }
