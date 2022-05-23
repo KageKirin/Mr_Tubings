@@ -1,5 +1,5 @@
 {
-    "name": "KageKirin.MrTubings.Runtime",
+    "name": "KageKirin.Mr_Tubings.Runtime",
     "rootNamespace": "KageKirin.Mr_Tubings",
     "references": [
         "Unity.Mathematics",
