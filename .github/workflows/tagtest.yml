@@ -25,6 +25,12 @@ jobs:
       - name: Install conventional-changelog
         run: npm i conventional-changelog-cli -g
 
+      - name: Install version tools
+        run: |
+          npm install -g https://github.com/kagekirin/node-package-version/tarball/main
+          npm install -g https://github.com/kagekirin/unity-bundle-version/tarball/main
+
+
       - name: Get latest git tag
         id: latesttag
         run: |
@@ -41,15 +47,18 @@ jobs:
 
       - name: Get updated version
         id: updated_version
-        uses: KageKirin/get-node-package-version@v1
+        run: |
+          node-package-version get package.json
+          echo "::set-output name=version::`node-package-version get package.json`"
       - name: Print updated version
         run: echo ${{ steps.updated_version.outputs.version }}
 
       - name: Update unity project bundle version
         id: set_version
-        uses: KageKirin/set-unity-bundle-version@v1
-        with:
-          version: ${{ steps.updated_version.outputs.version }}
+        run: |
+          unity-bundle-version set -v "${{ steps.updated_version.outputs.version }}" ProjectSettings/ProjectSettings.asset
+          unity-bundle-version get ProjectSettings/ProjectSettings.asset
+          echo "::set-output name=version::`unity-bundle-version get ProjectSettings/ProjectSettings.asset`"
       - name: Print set version
         run: echo ${{ steps.set_version.outputs.version }}
 
