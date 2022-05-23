@@ -1,6 +1,6 @@
 {
     "name": "com.kagekirin.mrtubings",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "displayName": "Mr. Tubings",
     "description": "Visual debugger script to generate a skinned mesh from any transform hierarchy.",
     "unity": "2021.1^",
