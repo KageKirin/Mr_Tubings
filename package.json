@@ -5,8 +5,10 @@
     "description": "Visual debugger script to generate a skinned mesh from any transform hierarchy.",
     "unity": "2021.1^",
     "files": [
-        "Assets/Scripts/Runtime/**",
-        "Assets/Scripts/Runtime.meta",
+        "Assets/Scripts/Mr_Tubings/Runtime/**",
+        "Assets/Scripts/Mr_Tubings/Runtime.meta",
+        "Assets/Scripts/Mr_Tubings/**",
+        "Assets/Scripts/Mr_Tubings.meta",
         "Assets/Scripts.meta",
         "**.meta"
     ],
