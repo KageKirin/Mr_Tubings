@@ -19,6 +19,13 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
+
+      - name: Remove superfluous metafiles we do not want to pack
+        run: |
+          rm Assets/Models.meta
+          rm Assets/Scenes.meta
+          rm Assets/Editor.meta
+
       - name: Pack
         run: npm pack
       - name: Verify
