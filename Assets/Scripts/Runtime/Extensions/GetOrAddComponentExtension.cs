@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace KageKirin.Mr_Tubings
 {
-    static internal class GetOrAddComponentExtension
+    static public class GetOrAddComponentExtension
     {
         public static T GetOrAddComponent<T>(this GameObject gameObject) where T : Component
         {
