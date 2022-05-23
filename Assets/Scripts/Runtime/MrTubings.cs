@@ -16,7 +16,7 @@ namespace KageKirin.Mr_Tubings
         public float radius = 0.01f;
 
         [Tooltip("Leaf node axis length")]
-        public float leafAxisLength = 0.1f;
+        public float leafAxisLength = 0.01f;
 
         [Tooltip("Subdivision of cylinder disc")]
         [Range(3, 1000)]
@@ -97,6 +97,26 @@ namespace KageKirin.Mr_Tubings
                     boneWeights,
                     indices
                 );
+
+                // add small axis for leaf nodes
+                if (transform.childCount == 0 && leafAxisLength >= 0.0f)
+                {
+                    float3 leafAxis = math.float3(0, leafAxisLength, 0);
+
+                    GenerateVertexDataForBone(
+                        ref transform,
+                        tIdx,
+                        leafAxis,
+                        mWorldToRootSpace,
+                        radialPositions,
+                        lateralPositions,
+                        vertices,
+                        normals,
+                        uvs,
+                        boneWeights,
+                        indices
+                    );
+                }
             }
 
             // create new mesh
