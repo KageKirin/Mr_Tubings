@@ -1,33 +1,33 @@
 {
-    "name": "com.kagekirin.mrtubings",
-    "version": "0.0.9",
-    "displayName": "Mr. Tubings",
-    "description": "Visual debugger script to generate a skinned mesh from any transform hierarchy.",
-    "unity": "2021.1^",
-    "license": "CC-BY-NC4.0",
-    "files": [
-        "Assets/Scripts/Mr_Tubings/**",
-        "Assets/Scripts/Mr_Tubings.meta",
-        "Assets/Scripts.meta",
-        "**.meta"
-    ],
-    "dependencies": {},
-    "keywords": [
-        "skeleton",
-        "debug",
-        "mesh generator"
-    ],
-    "author": {
-        "name": "KageKirin",
-        "email": "kagekirin@gmail.com",
-        "url": "https://github.com/kagekirin"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/KageKirin/Mr_Tubings.git",
-        "directory": "com.kagekirin.mrtubings"
-    },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/@kagekirin"
-    }
+  "name": "com.kagekirin.mrtubings",
+  "version": "0.0.10",
+  "displayName": "Mr. Tubings",
+  "description": "Visual debugger script to generate a skinned mesh from any transform hierarchy.",
+  "unity": "2021.1^",
+  "license": "CC-BY-NC4.0",
+  "files": [
+    "Assets/Scripts/Mr_Tubings/**",
+    "Assets/Scripts/Mr_Tubings.meta",
+    "Assets/Scripts.meta",
+    "**.meta"
+  ],
+  "dependencies": {},
+  "keywords": [
+    "skeleton",
+    "debug",
+    "mesh generator"
+  ],
+  "author": {
+    "name": "KageKirin",
+    "email": "kagekirin@gmail.com",
+    "url": "https://github.com/kagekirin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KageKirin/Mr_Tubings.git",
+    "directory": "com.kagekirin.mrtubings"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@kagekirin"
+  }
 }
