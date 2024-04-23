@@ -6,9 +6,9 @@
   "unity": "2021.1^",
   "license": "CC-BY-NC4.0",
   "files": [
-    "Assets/Scripts/Mr_Tubings/**",
-    "Assets/Scripts/Mr_Tubings.meta",
-    "Assets/Scripts.meta",
+    "**/*.json",
+    "**/*.cs",
+    "**/*.asmdef",
     "**/*.md",
     "**/*.meta"
   ],
