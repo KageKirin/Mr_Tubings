@@ -9,7 +9,8 @@
     "Assets/Scripts/Mr_Tubings/**",
     "Assets/Scripts/Mr_Tubings.meta",
     "Assets/Scripts.meta",
-    "**.meta"
+    "**/*.md",
+    "**/*.meta"
   ],
   "dependencies": {},
   "keywords": [
